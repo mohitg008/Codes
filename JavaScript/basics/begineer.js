@@ -105,7 +105,7 @@ isLeap('2016'); */
     }
     else
     console.log('you got grade F');}
-else 
+else
  console.log("enter less than 100 marks");
 }
 
@@ -161,7 +161,7 @@ day(7); */
         }
     }
     console.log(`Maximum value is ${maxValue} and Minimum value is ${minValue}`);
-    
+
 }
 
 minAndMax([2,5,6,4]); */
@@ -171,7 +171,7 @@ minAndMax([2,5,6,4]); */
 
 /* function leftShift(arr,n){
      if(arr.length === 0)
-        return; 
+        return;
 
      n = n % arr.length;
 
@@ -180,8 +180,8 @@ minAndMax([2,5,6,4]); */
         arr.push(ele);
      }
      return arr;
-} 
-     
+}
+
 console.log(leftShift([1,2,3,4,5],2));*/
 
 /* function rightShift(arr,n){
@@ -191,7 +191,7 @@ console.log(leftShift([1,2,3,4,5],2));*/
     n = n%arr.length;
     for(let i=0;i<n;i++){
        var ele = arr.pop();
-       arr.unshift(ele);   
+       arr.unshift(ele);
     }
     return arr;
 }
@@ -212,7 +212,7 @@ console.log(rightShift([1,2,3,4,5],2)); */
 
     for(let i=0; i<arr1.length;i++){
         if(!union.includes(arr1[i]))
-            union.push(arr1[i]);    
+            union.push(arr1[i]);
     }
 
     for(let i=0;i<arr2.length;i++){
@@ -231,7 +231,7 @@ console.log(rightShift([1,2,3,4,5],2)); */
     }
 
     return {union,intersection};
-    
+
 } */
 
 
@@ -239,7 +239,7 @@ console.log(rightShift([1,2,3,4,5],2)); */
 
 /* function unionAndIntersection(arr1,arr2){
     var union = [...new Set([...arr1,...arr2])];
-    
+
     var intersection = arr1.filter(ele =>arr2.includes(ele));
 
     return {union,intersection}
@@ -267,7 +267,7 @@ console.log(result.union,result.intersection); */
         }
     }
     return result;
-} 
+}
 
 console.log(flatten([1,[2,[3,[4]]],5]));  */
 
@@ -334,8 +334,8 @@ function averageMarks(student){
         for(let i=0;i<len;i++){
             acc = acc+student.marks[i];
         }
-    return acc / len; 
-    
+    return acc / len;
+
 }
 
 console.log(averageMarks(student)); */
@@ -380,7 +380,7 @@ console.log(hasProperty(user,'dog'));
 
     for (let i = 1; i < n; i++)
     {
-       fibbo.push(fibbo[i] + fibbo[i-1]); 
+       fibbo.push(fibbo[i] + fibbo[i-1]);
     }
     return fibbo;
 }
@@ -414,7 +414,7 @@ console.log(fib(10));
             break;
         case 10: return 1;
             break;
-         return 0;    
+         return 0;
         }
 
 
@@ -436,9 +436,9 @@ console.log("YOU WON THE GAME!!!"); */
 
 
 //Implement a nested loop to print a multiplication table for numbers 1 through 10.
-/* 
+/*
 function table(val1 , val2){
-    
+
     for(let i=val1;i<=val2;i++){
         var row ="";
         for(let j=val1;j<=val2;j++){
@@ -446,7 +446,7 @@ function table(val1 , val2){
         }
         console.log(row.trim());
     }
-    
+
 } */
 
 
@@ -498,7 +498,7 @@ console.log(sumArr([1,2,3,4,5])); */
 
 //Write a higher-order function that takes two numbers and a callback function to perform basic arithmetic operations.
 
-/* 
+/*
 function multiply(a,b){
     return a*b;
 }
@@ -561,7 +561,7 @@ const timer = setInterval(()=>{
 
 /* function multiplyBy20(fixecNum){
     return  function(value){
-          return fixecNum * value ; 
+          return fixecNum * value ;
     }
 }
 
@@ -571,3 +571,148 @@ console.log(multiply(3));
 console.log(multiply(2)); */
 
 
+//Write a function greet(name = "Guest") that greets the user with a default name if no name is provided.
+
+/* function greet(name="Joe"){
+    return `greeting to ${name}!!`;
+}
+
+console.log(greet('Bruce'));
+console.log(greet()); */
+
+
+//Create a function calculatePrice(price, tax = 0.18) that calculates the total price with a default tax rate.
+
+/* function calculatePrice(price, tax = 0.18){
+    return price + (price * tax);
+}
+
+console.log(calculatePrice(30));
+console.log(calculatePrice(50));
+console.log(calculatePrice(10)); */
+
+
+//Write a function createUser(username, role = "User") to create a user with a default role.
+
+/* function createUser(username, role='user')
+{
+    var profile = {
+        name:username,
+        typeOfProfile:role
+    }
+  console.log(profile);
+}
+createUser('ultraMan36');
+createUser('boss','admin'); */
+
+
+
+
+/*Modify the following function to use default parameters:
+function sum(a, b) {
+  if (b === undefined) {
+    b = 0;
+  }
+  return a + b;
+}
+
+*/
+
+/* function sum(a=0, b=0) {
+    if (b === undefined) {
+      b = 0;
+    }
+    return a + b;
+  }
+
+  console.log(sum()); */
+
+
+
+//Write a function add(a, b, c) and call it using the spread operator on the array [1, 2, 3].
+
+/*   var array = [1,2,3];
+
+  function add(a,b,c){
+    return a+b+c;
+  }
+
+  console.log(add(...array)); */
+
+
+
+//Combine two arrays [1, 2, 3] and [4, 5, 6] using the spread operator and pass them as arguments to a function that finds the maximum number.
+
+
+/*   function maxVal(arr){
+    var max = arr[0];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+    return max;
+  }
+
+  console.log(maxVal([...[1,2,3],...[4,5,6]])); */
+
+
+//Write a function concatStrings(a, b, c) and use the spread operator to pass arguments from an array ["Hello", " ", "World"].
+
+/*   function concatStrings(a,b,c){
+    return a+b+c;
+  }
+
+  console.log(concatStrings(...['Hello',' ','World'])); */
+
+
+
+
+//Merge two arrays [1, 2, 3] and [4, 5, 6] using the spread operator.
+
+/* var arr1 = [1,2,3];
+var arr2 = [4,5,6];
+
+var mergedArr = [...arr1,...arr2];
+console.log(mergedArr); */
+
+
+
+
+//Add an element 0 to the beginning of an array [1, 2, 3] using the spread operator.
+
+/* var originalArr = [1,2,3];
+
+var newArr = [100,...originalArr];
+
+console.log(newArr)
+ */
+
+
+
+
+//Flatten a nested array [1, [2, 3], 4] using the spread operator.
+
+/* var flattend = [1,...[2,3],4];
+console.log(flattend); */ 
+
+
+//Write a function that takes two arrays and returns their intersection using the spread operator.
+
+//var arr1 = [1,2,3,4];
+//var arr2 = [4,5,6,7];
+
+/* function intersection(arr){
+    var length = (arr.length-1)/2;
+
+    for(let i=0,j=arr.length-1;i<length;i++,j--){
+        if(arr[i] === arr[j])
+            return arr[i];
+        
+    }
+}
+
+
+console.log(`intersection of both array is ${intersection([...arr1,...arr2])}`); */
+
+//
