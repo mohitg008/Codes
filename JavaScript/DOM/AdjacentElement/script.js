@@ -38,3 +38,7 @@ h2.insertAdjacentElement('afterbegin',p6);
 var p7 = document.createElement('p');
 p7.append('after all ends');
 h2.insertAdjacentElement('afterend',p7);
+
+var newEle = document.createElement('p');
+newEle.append('new element');
+h2.after(newEle);
