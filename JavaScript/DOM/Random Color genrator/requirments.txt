@@ -1,0 +1,4 @@
+make a random color genrator
+button should change the bgcolor
+text color should change/visible when background color gets dark
+it should display rgb values
