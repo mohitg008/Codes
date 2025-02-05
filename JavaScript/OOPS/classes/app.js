@@ -51,7 +51,7 @@ class Cat extends Pet{
 }
 
 class Dog extends Pet{
-    bark(){
+    bark(){ 
         return `WOOOOF!!`;
     }
 }
