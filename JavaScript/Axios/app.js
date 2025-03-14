@@ -23,9 +23,20 @@ getStarWars(1);
 getStarWars(12); */
 
 
-const getDadJoke = async () =>{
-    const config = {headers: {Accept: 'application/json' }};
-    const res = axios.get('https://icanhazdadjoke.com/',config);
-    console.log(res);
+const btn = document.querySelector('button');
+const ul = document.querySelector('ul');
+const getDadJoke = async () => {
+  const config = { headers: { Accept: 'application/json' } };
+  const res = await axios.get('https://icanhazdadjoke.com/', config);
+  return res.data.joke;
 }
+
+const addNewJoke = async()=>{
+  const jokeText = await getDadJoke();
+  const newLi = document.createElement('li');
+  newLi.append(jokeText);
+  ul.append(newLi);
+}
+
+btn.addEventListener('click',addNewJoke)
 
