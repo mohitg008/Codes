@@ -29,7 +29,7 @@ console.log(color1.rgba(0.5));
 
 //keywords
 
-class Pet{
+/* class Pet{
     constructor(name,age){
         this.name=name;
         this.age=age
@@ -55,3 +55,28 @@ class Dog extends Pet{
         return `WOOOOF!!`;
     }
 }
+ */
+
+
+
+
+
+class User{
+    constructor(userName,password,age){
+      this.userName = userName;
+      this.password = password;
+      this.age = age;
+    }
+
+    greet = () => {
+         return `Hello, ${this.userName}`
+    }    
+}
+
+
+
+
+const userOne = new User('Joel','123',40);
+
+console.log(userOne.password)
+console.log(userOne.greet());
