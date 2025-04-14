@@ -1,0 +1,18 @@
+h1 {
+    font-size: 50px;
+    border: 5px solid black;
+    line-height: 100%;
+}
+
+#parent {
+    background-color: grey;
+    height: 500px;
+    width: 500px;
+}
+
+#child {
+    background-color: aqua;
+    height: 50%;
+    width: 50%;
+    
+}
