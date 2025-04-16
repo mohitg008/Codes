@@ -1,0 +1,23 @@
+section {
+    height: 500px;
+    width: 500px;
+    background-color: hotpink;
+}
+
+#rgba {
+    height: 50%;
+    width: 50%;
+    /* background-color: rgba(255,255,255,0.6); */
+
+    background-color: #81aee9ea;
+}
+
+#opacity {
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+    opacity: 0.3;
+}
+button {
+    margin: 0.5em;
+}
