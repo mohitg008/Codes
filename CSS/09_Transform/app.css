@@ -1,0 +1,22 @@
+h1 {
+    border: 5px solid white;
+    padding: 0.7em;
+    width: 120px;
+    text-align: center;
+    background-color: red;
+    margin: 20px auto;
+    /*transition: transform 3s ease-out; */
+}
+
+
+section h1:nth-of-type(1){
+    transform: rotate(30deg);
+}
+
+section h1:nth-of-type(4){
+    transform: skew(20deg);
+}
+
+section h1:nth-of-type(5){
+    transform: translateX(-100px) scale(0.5) rotate(280deg) skew(10deg);
+}
