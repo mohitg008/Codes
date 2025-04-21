@@ -1,0 +1,12 @@
+section {
+    height: 800px;
+    width: 80%;
+    margin: 0 auto;
+    background: center/50% url("https://github.com/ServiceStack/images/blob/master/hero/photo-1421789665209-c9b2a435e3dc.jpg?raw=true");
+    
+}
+
+h1{
+    font-size: 3em;
+    color: white;
+}

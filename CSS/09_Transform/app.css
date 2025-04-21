@@ -20,3 +20,23 @@ section h1:nth-of-type(4){
 section h1:nth-of-type(5){
     transform: translateX(-100px) scale(0.5) rotate(280deg) skew(10deg);
 }
+
+
+/*
+transfrom -> property  ----
+                           |
+                           skew(deg/turn,deg)  -> transforms the element on 2d space (like making element thin ot thick or strechy)
+
+                           rotate(deg/turn) -> helps rotate element. can rotate upto 360 degrees
+
+                           scale(sx,sy) -> values can upto be 0 to 1. we can set x plane and y plane or just one the whole scale
+                           
+                           translate(tx, ty) ->by default if one value given(considers x axis) it moves postion of element -ve vales left of x axis +ve values right of x axis
+                              |
+                              |
+                               translateX()
+                                
+                               translateY()
+
+transform-origin -> property -> we can set pin point on element 
+*/
